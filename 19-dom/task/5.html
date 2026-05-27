@@ -1,0 +1,12 @@
+<h1 id="name" >name</h1>
+<button  onclick="change(event)">ks</button>
+<button onclick="change(event)">k</button>
+<button onclick="change(event)">ck</button>
+ <!-- here event is obj its has all the poosible event occurs in web page  -->
+  <!-- now we use in button so it has possible event occurs in buttons -->
+<script>
+    var h1=document.getElementById("name")
+    function change(event){
+        h1.textContent=event.target.textContent
+    }
+</script>

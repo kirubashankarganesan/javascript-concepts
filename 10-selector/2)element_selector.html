@@ -1,0 +1,36 @@
+<!-- 1. querySelector
+2. querySelectorAll
+3. getElementById
+4. getElementByClassName
+5. getElementByTagName -->
+
+1. querySelector
+<div class="one">
+    <h1 class="ok">hi</h1>
+    <h1 class="ok">bye</h1>
+</div>
+<script>
+var div1=document.getElementById("one")//null in console
+var div2=document.querySelector("one")//null in console
+var div3=document.querySelector(".one")//display tag in console   
+// . for class and # for id
+console.log(div1);
+var div4=document.querySelector("h1")
+console.log(div4);// display the first selector only
+var div5=document.querySelector(".ok")// same class name then first class is display
+</script>
+
+ 2. querySelectorAll
+//  <div class="one">
+//     <h1 class="ok">hi</h1>
+//     <h1 class="ok">bye</h1>
+// </div>
+// <script>
+    var a=document.querySelectorAll(".ok")
+    // console.log(a);//NodeList(2) [h1.ok, h1.ok]
+    // console.log(a[0]);//first h1
+    for(i=0;i<a.length;i++){
+        console.log(a[i].textContent);//hi bye
+        
+    }
+</script>

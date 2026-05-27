@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<center>
+
+    <body>
+
+        <header>
+            <h1>Student Course Registration Portal</h1>
+            <nav>
+                <a href="login.html">Logout</a>
+            </nav>
+            <hr>
+        </header>
+
+        <section>
+            <h2>Available Courses</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Full Stack Java</td>
+                        <td>6 Months</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Full Stack Python</td>
+                        <td>6 Months</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>MERN Stack</td>
+                        <td>6 Months</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>MEAN Stack</td>
+                        <td>6 Months</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Register for Course</h2>
+
+            <form action="#" method="POST">
+
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="phone">Mobile</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                <br><br>
+
+                <label for="course">Select Course</label><br>
+                <select id="course" name="course">
+                    <option>Full Stack Java</option>
+                    <option>Full Stack Python</option>
+                    <option>MERN Stack</option>
+                    <option>MEAN Stack</option>
+                </select>
+                <br><br>
+
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                <br><br>
+
+                <input type="submit" value="Register">
+                <input type="reset">
+
+            </form>
+        </section>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2026 Student Portal | Contact: support@studentportal.com</p>
+        </footer>
+</center>
+</body>
+
+</html>

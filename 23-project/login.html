@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+    <script src="registration.js"></script>
+</head>
+<center>
+
+    <body>
+
+        <header>
+            <h1>Student Portal Login</h1>
+            <hr>
+        </header>
+
+        <section>
+            <h2>Login</h2>
+
+            <form action="registration.html" method="GET">
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required minlength="6">
+                <br><br>
+
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Me</label>
+                <br><br>
+
+                <input type="submit" value="Login">
+                <input type="reset" value="Clear">
+
+            </form>
+
+            <p>New user? <a href="registration.html">Register Here</a></p>
+        </section>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2026 Student Portal</p>
+        </footer>
+
+    </body>
+</center>
+
+</html>

@@ -1,0 +1,17 @@
+<!-- It is property in js that allows you to access or modify the html content of an 
+ of the element in doc object model(DOM).
+ it is primarily used to retrive or set the html content inside an html element -->
+
+ <div id="one">
+    <h1>hi</h1>
+ </div>
+ <script>
+    var h1=document.getElementById("one")
+    console.log(h1);//div fully displsy
+    console.log(h1.textContent);//hi  only deals with text
+    console.log(h1.innerHTML);// <h1>hi</h1>  deal with html tag
+       h1.innerHTML="bye"  //bye in web page
+       h1.innerHTML="<h1>bye</h1>"  // replace that h1 in web page and console
+       h1.textContent="<h1>byaae</h1>"  // it display the as a string 
+       
+ </script>
